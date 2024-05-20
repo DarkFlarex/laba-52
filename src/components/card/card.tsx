@@ -12,7 +12,7 @@ const suits: { [key: string]: string } = {
     spades: '♠'
 };
 
-const Card: React.FC<Props> = ({ rank, suit }) => {
+const MyCard: React.FC<Props> = ({ rank, suit }) => {
 
     return (
         <span className={`card rank-${rank.toLowerCase()} ${suit}`}>
@@ -22,4 +22,4 @@ const Card: React.FC<Props> = ({ rank, suit }) => {
     );
 };
 
-export default Card;
+export default MyCard;
