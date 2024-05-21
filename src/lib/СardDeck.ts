@@ -16,7 +16,8 @@ class CardDeck {
     }
 
     public getCard(): Card {
-        return this.cards.splice(this.cards.length - 1, 1)[0];
+        const randomIndex = Math.floor(Math.random() * this.cards.length);
+        return this.cards.splice(randomIndex, 1)[0];
     }
 
     public getCards(howMany: number): Card[] {
